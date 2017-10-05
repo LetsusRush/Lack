@@ -1,0 +1,16 @@
+[
+{
+  "modid": "lack",
+  "name": "Lack",
+  "description": "A mod of whimsy.",
+  "version": "0.01",
+  "mcversion": "1.12.1",
+  "url": "https://mcforge.readthedocs.io/en/latest/",
+  "updateUrl": "",
+  "authorList": ["Lettuce / Lets us Rush"],
+  "credits": "The Forge and FML guys, for making this example, the example mod, and contributors to Forge documentation. Vazkii's code and RootsTeam code has been studied and in some cases used, like with Botania's _make.bat",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
