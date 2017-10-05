@@ -24,13 +24,13 @@ public class ModItems {
 
     // Items
     public static Item ItemLack = new BaseItem("lack");
-    public static Item ItemSalt = new BaseItem("salt");
+    public static Item ItemSalt = new BaseItem("seasalt");
 
-    public static Item ItemBathSaltNormal = new BaseItem("bathsalt");
-    public static Item ItemBathSaltHaste = new BaseItem("bathsalthaste");
-    public static Item ItemBathSaltSpeed = new BaseItem("bathsaltspeed");
-    public static Item ItemBathSaltStrength = new BaseItem("bathsaltstrength");
-    public static Item ItemBathSaltResistance = new BaseItem("bathsaltresistance");
+    public static Item ItemBathSaltNormal = new BathSaltItem("bathsalt");
+    public static Item ItemBathSaltHaste = new BathSaltItem("bathsalthaste");
+    public static Item ItemBathSaltSpeed = new BathSaltItem("bathsaltspeed");
+    public static Item ItemBathSaltStrength = new BathSaltItem("bathsaltstrength");
+    public static Item ItemBathSaltResistance = new BathSaltItem("bathsaltresistance");
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> e) {
@@ -44,6 +44,5 @@ public class ModItems {
     public static void reg(Item item) {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
                 .register(item, 0, new ModelResourceLocation(Lack.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
-
     }
 }
