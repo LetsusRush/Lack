@@ -19,10 +19,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod.EventBusSubscriber
 public class ModItems {
-
-    // Blocks
-
-    // Items
+    // Basic Items
     public static Item ItemLack = new BaseItem("lack");
     public static Item ItemSalt = new BaseItem("seasalt");
 
@@ -42,7 +39,6 @@ public class ModItems {
     }
 
     public static void reg(Item item) {
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-                .register(item, 0, new ModelResourceLocation(Lack.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
-    }
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Lack.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory")); }
+
 }

@@ -1,5 +1,6 @@
 package lettuce.lack.proxy;
 
+import lettuce.lack.block.ModBlocks;
 import lettuce.lack.item.ModItems;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -19,6 +20,7 @@ public class ClientProxy extends CommonProxy{
     public void init(FMLInitializationEvent e) {
         super.init(e);
         ModItems.registerItemRenders();
+        ModBlocks.registerBlockRenders();
     }
 
     @Override
