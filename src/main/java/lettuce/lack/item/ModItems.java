@@ -21,6 +21,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class ModItems {
     // Basic Items
     public static Item ItemLack = new BaseItem("lack");
+    public static Item ItemGlint = new BaseItem("glint");
+
     public static Item ItemSalt = new BaseItem("seasalt");
 
     public static Item ItemBathSaltNormal = new BathSaltItem("bathsalt");
@@ -29,14 +31,21 @@ public class ModItems {
     public static Item ItemBathSaltStrength = new BathSaltItem("bathsaltstrength");
     public static Item ItemBathSaltResistance = new BathSaltItem("bathsaltresistance");
 
+    public static Item ItemZip = new ZipItem("zip");
+    public static Item ItemBang = new BangItem("bang");
+
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> e) {
-        e.getRegistry().registerAll(ItemLack, ItemSalt);
+        e.getRegistry().registerAll(ItemLack, ItemSalt, ItemGlint, ItemZip, ItemBang);
     }
 
     public static void registerItemRenders() {
         reg(ItemLack);
+        reg(ItemGlint);
+        reg(ItemZip);
+        reg(ItemBang);
     }
+
 
     public static void reg(Item item) {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Lack.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory")); }

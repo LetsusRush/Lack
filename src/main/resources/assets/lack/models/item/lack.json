@@ -1,5 +1,5 @@
 {
-  "parent":"lack:item/baseitemmodel",
+  "parent":"minecraft:item/generated",
   "textures": {
     "layer0":"lack:items/lack"
   }

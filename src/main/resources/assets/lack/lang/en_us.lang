@@ -3,11 +3,18 @@
 #   MISC
 
 #   ITEMS
-item.lack.name=Lack
 item.seasalt.name=Sea Salt
 
+item.lack.name=Lack
+item.glint.name=Glint
+item.bang.name=Bang
+
 #   BLOCKS
-tile.whimsy.name
+tile.whimsy.name=Whimsy
+
+
 #   TILE ENTITIES
 
 #   ENTITIES
+entity.lack:bang.name=Bang
+entity.bang.name=Banger
